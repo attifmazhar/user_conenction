@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:id="@+id/bg_layout">
+
+    <TextView
+        android:id="@+id/noDeviceFoundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/back1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="end"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/currentcount"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view" />
+
+        <TextView
+            android:id="@+id/beech"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slash" />
+
+        <TextView
+            android:id="@+id/totalcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/text_view" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/searchProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--   <CustomViewPager
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/pager"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+        />
+
+
+
+
+   <TextView
+       android:id="@+id/txtWaiting"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Waiting"
+       android:textColor="#fff"
+       android:textSize="18sp"
+       android:layout_marginBottom="25dp"
+       android:layout_marginTop="10dp"
+       android:paddingLeft="30dp"
+       android:paddingRight="30dp"
+       android:layout_gravity="center_horizontal"
+       android:visibility="gone"/>-->
+
+</LinearLayout>

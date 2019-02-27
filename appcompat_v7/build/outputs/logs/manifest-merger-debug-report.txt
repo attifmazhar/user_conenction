@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:16:1-21:12
+INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:16:1-21:12
+INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:16:1-21:12
+	package
+		ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:18:11-49
+		INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml
+		INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:17:11-57
+	xmlns:android
+		ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:16:11-69
+uses-sdk
+ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:19:5-83
+INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:19:5-83
+INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:19:5-83
+	tools:overrideLibrary
+		ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:19:15-81
+	android:minSdkVersion
+		INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml
+		ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:19:5-83
+		INJECTED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml
+application
+ADDED from D:\android\fiver\Myapp1\Myapp\appcompat_v7\AndroidManifest.xml:20:5-19

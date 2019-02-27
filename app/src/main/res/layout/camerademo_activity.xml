@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" >  
+  
+    <SurfaceView  
+        android:id="@+id/surfaceView"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" />  
+  
+    <TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_centerInParent="true"  
+        android:text=""  
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/captureImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/icon_camera" />
+  
+<!--     <Button  
+        android:id="@+id/flash"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentBottom="true"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginRight="25dp"  
+        android:layout_toLeftOf="@id/captureImage"  
+        android:background="@drawable/icon" />  
+  
+    <Button  
+        android:id="@+id/flipCamera"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentBottom="true"  
+        android:layout_marginBottom="10dp"  
+        android:layout_marginLeft="25dp"  
+        android:layout_toRightOf="@id/captureImage"  
+        android:background="@drawable/icon" />   -->
+  
+</RelativeLayout> 

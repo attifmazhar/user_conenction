@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.myapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.project.myapp.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.project.myapp.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.AlertGPSDialogueActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name="com.project.myapp.CameraDemoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.ProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ProfileTheme">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="com.project.myapp.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ProfileTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.project.myapp.ExitActivity"
+            android:autoRemoveFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <!--
+        <activity
+            android:name=".OthersProfile"
+            android:label="@string/app_name"
+            android:theme="@style/ProfileTheme" >
+        </activity>
+        -->
+        <activity android:name="com.project.myapp.sharing.ShareActivity" />
+        <activity
+            android:name="com.project.myapp.PictureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ProfileTheme" />
+        <activity
+            android:name="com.project.myapp.ListDevice"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.FullScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.NationalityAvtivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ProfileTheme" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.sharing.FacebookSharingActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.sharing.WebViewActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.sharing.TwitterLoginActivity"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.myapp.Bl_Settings"
+            android:screenOrientation="nosensor" />
+        <!--
+        <activity android:name=".Custom" >
+        </activity>
+        <activity android:name=".temp" />
+        -->
+
+
+        <!--
+             Bluetooth permission function
+                 <receiver
+                 android:name=".BootUpReceiver"
+                 android:enabled="true"
+                 android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+                 <intent-filter>
+                     <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                     <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                     <category android:name="android.intent.category.DEFAULT" />
+                 </intent-filter>
+             </receiver>
+             End bluetooth permission function
+        -->
+        <receiver
+            android:name="com.project.myapp.StartupReciever"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <!-- <receiver -->
+        <!-- android:name=".BluetoothStateChangedReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <receiver
+            android:name="com.project.myapp.DeviceFoundReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.project.myapp.ListenRequestService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.project.myapp.ConnectionActivity"
+            android:screenOrientation="nosensor"
+            android:launchMode="singleInstance"
+            android:theme="@style/ProfileTheme" />
+        <activity
+            android:name="com.project.myapp.ConnectionResultActivity"
+            android:screenOrientation="nosensor"
+            android:launchMode="singleInstance"
+            android:theme="@style/ProfileTheme" />
+        <activity
+            android:name="com.project.myapp.Transparent"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.project.myapp.SoundsActivity"
+            android:label="@string/sounds"
+            android:parentActivityName="com.project.myapp.Bl_Settings"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.scytec.datamobile.vd.gui.android.AppPreferenceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.myapp.VibrationsActivity"
+            android:label="@string/vibrations"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.project.myapp.LightsActivity"
+            android:label="@string/lights"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name="com.project.myapp.MyLocationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.project.myapp.AppKilledService"
+            android:stopWithTask="false" />
+        <service
+            android:name="com.project.myapp.OnClearFromRecentService"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name="com.project.myapp.BootUpReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.project.myapp.networking.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.project.myapp.CheckGPS"
+            android:stopWithTask="false" />
+
+        <service
+            android:name="com.project.myapp.AppStatusService"
+            android:stopWithTask="false" />
+
+        <!--<service-->
+        <!--android:name=".networking.NetworkChangeService"-->
+        <!--android:stopWithTask="false" />-->
+
+        <service
+            android:name="com.project.myapp.networking.UpdateConnectionService"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name="com.project.myapp.networking.NoInternetConnectionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--<meta-data-->
+            <!--android:name="com.google.firebase.messaging.default_notification_icon"-->
+            <!--android:resource="@drawable/ic_launcher" />-->
+        <!--<meta-data-->
+            <!--android:name="com.google.firebase.messaging.default_notification_color"-->
+            <!--android:resource="@color/colorAccent" />-->
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+            <!--android:value="@string/app_id"/>-->
+
+        <service
+            android:name=".ConnectionService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+    </application>
+
+</manifest>

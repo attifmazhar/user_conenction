@@ -1,0 +1,5 @@
+To update info of the index.js file:
+
+in (cdm) command prompt cd BluetoothDataexchange
+		  cd cloud
+		  firebase deploy --only functions

@@ -1,0 +1,35 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/profileicon2_resized"
+        android:title="@string/profile"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/visible"
+        android:checkable="true"
+        android:icon="@drawable/ic_eyeoff"
+        android:title="@string/visibility"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:checkable="true"
+        android:icon="@drawable/ic_share_resized"
+        android:title="@string/share"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/menu_settings"
+        android:checkable="true"
+        android:icon="@drawable/settingicon_resized"
+        android:title="@string/settings"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/question"
+        android:checkable="true"
+        android:icon="@drawable/ic_quest_resized"
+        android:title="@string/questions"
+        android:showAsAction="always" />
+
+</menu>

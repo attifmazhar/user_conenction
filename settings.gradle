@@ -1,0 +1,3 @@
+include ':app'
+include ':facebookSDK'
+include ':appcompat_v7'

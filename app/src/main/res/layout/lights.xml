@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:paddingLeft="7.1dp"
+    android:paddingStart="7.1dp"
+    android:paddingRight="9dp"
+    android:paddingEnd="9dp"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="44.2dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/receiving"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:id="@+id/boldReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.7dp"
+                android:layout_marginStart="7.7dp"
+                android:text="@string/light_receiving"
+                android:textColor="#E6E6E6"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/disabled"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/Lreceivingtext"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/LreceivingCheckBoxLayout"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-15.8dp"
+                android:button="@drawable/checkbox_selector"
+                android:id="@+id/LreceivingCheckBox"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5.8dp"
+        android:layout_marginRight="40.5dp"
+        android:layout_marginEnd="40.5dp"
+        android:background="#808080" />
+
+    <LinearLayout
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Hello World!"
+        android:id="@+id/receivingReply1"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:id="@+id/boldReply1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.7dp"
+                android:layout_marginStart="7.7dp"
+                android:gravity="center_vertical"
+                android:text="@string/light_reply_1"
+                android:textColor="#E6E6E6"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="0.8dp"
+                android:text="@string/disabled"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/Lreply1text"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/Lreply1CheckBoxLayout"
+            >
+
+            <CheckBox
+                android:id="@+id/Lreply1CheckBox"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="-15.8dp"
+                android:layout_gravity="end"
+                android:button="@drawable/checkbox_selector" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5.4dp"
+        android:layout_marginRight="40.5dp"
+        android:layout_marginEnd="40.5dp"
+        android:background="#808080" />
+
+    <LinearLayout
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/receivingReply2"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:id="@+id/boldReply2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.7dp"
+                android:layout_marginStart="7.7dp"
+                android:gravity="center_vertical"
+                android:text="@string/light_reply_2"
+                android:textColor="#E6E6E6"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="0.8dp"
+                android:text="@string/disabled"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/Lreply2text"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/Lreply2CheckBoxLayout"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15.8dp"
+                android:layout_gravity="end"
+                android:button="@drawable/checkbox_selector"
+                android:id="@+id/Lreply2CheckBox" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5.6dp"
+        android:layout_marginRight="40.5dp"
+        android:layout_marginEnd="40.5dp"
+        android:background="#808080" />
+</LinearLayout>
